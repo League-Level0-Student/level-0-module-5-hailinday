@@ -4,17 +4,31 @@ import javax.swing.JOptionPane;
 
 public class prime {
 	public static void main(String[] args) {
-		while (true) {
+		
 			String input = JOptionPane.showInputDialog(null, "Insert any number");
 			int number = Integer.parseInt(input);
-			for (int i = 1; i <= number; i++) {
-			if (number % i == number && number % i == 1) {
+			if(number == 1) {
+				JOptionPane.showMessageDialog(null, "The number is not prime");
+			}
+			if(number == 0) {
+				JOptionPane.showMessageDialog(null, "The number is not prime");
+			}
+			if(number < 0) {
+				JOptionPane.showMessageDialog(null, "Please input a positive number");
+			}
+			if(number == 2) {
 				JOptionPane.showMessageDialog(null, "The number is prime");
 			}
-			else {
+			for (int i = 2; i <= number; i++) {
+			if (number % i == 0) {
 				JOptionPane.showMessageDialog(null, "The number is not prime");
-				}
+				break;
+			}
+			else {
+				JOptionPane.showMessageDialog(null, "The number is prime");
+				break;
+			}
+			
 			}
 		}
 	}
-}
