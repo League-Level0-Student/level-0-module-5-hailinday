@@ -31,15 +31,19 @@ public class Snowflake {
 		for (int i = 0; i < 6; i++) {
 
 			// #6. Set the pen color to black
-			rob.setPenColor(000000, 000000, 000000);
+			rob.setPenColor(Color.black);
 			// #7. move the robot by 50
 			rob.move(50);
 			// #8. turn the robot to the right by 60
 			rob.turn(60);
 			// #12. set the pen color to blue for even numbers of i
-			rob.setPenColor(ff0000, 0000ff, ff0000);
+			if (i % 2 == 0) {
+				rob.setPenColor(Color.blue);
+			} else {
+				rob.setPenColor(Color.red);
+			}
 			// #13. set the pen color to red for all odd numbers of i
-
+			
 			// #9. Use a for loop to do everything (#10, #11) 6 times ( use j as a counter )
 			for (int j = 0; j < 6; j++) {
 				
@@ -49,7 +53,7 @@ public class Snowflake {
 			// #11. move the robot by 50 (play the start button)
 			rob.move(50);
 			// #14. set the pen color to black
-			rob.setPenColor(000000, 000000, 000000);
+			rob.setPenColor(Color.black);
 			}
 			}
 			
