@@ -47,5 +47,30 @@ public class loop {
 //			}
 //				}
 
+//				for (int i = 0; i <= 2; i++) {
+//			for (int a = 1; a <= 3; a++) {
+//				System.out.print(a + i * 3);
+//				
+//			}
+//			System.out.println();
+			
+//		}
+		
+//		for (int i = 0; i <= 9; i++) {
+//			for (int a = 1; a <= 10; a++) {
+//				System.out.print(a + i * 10);
+				
+//			}
+//			System.out.println();
+			
+//		}
+		
+		for (int i = 0; i < 6; i++) {
+			for(int j = 0; j<i; j++){ 
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+
 	}
 }
